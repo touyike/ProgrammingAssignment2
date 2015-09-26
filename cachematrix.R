@@ -1,4 +1,12 @@
 ## cache matrix inverse to avoid re-compute 
+## USAGE:
+## >source("cachematrix.R")
+## >m1<-matrix(rnorm(16, mean=10, sd=1), 4, 4)
+## >mc<-makeCacheMatrix()
+## >mc$set(m1)
+## >mc$get()
+## >cacheSolve(mc)
+## >cacheSolve(mc)
 
 ## makeCacheMatrix is a list, which include: 
 ## mc<-makeCacheMatrix()
